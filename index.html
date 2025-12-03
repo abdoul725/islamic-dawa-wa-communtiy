@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AL’AMEEN ISLAM PROPAGATION CENTRE</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo" aria-label="AL'AMEEN logo">
+        <div class="nav-badge" aria-hidden="true">A</div>
+        <div class="nav-title">
+          <h1>AL'AMEEN ISLAM PROPAGATION CENTRE</h1>
+          <small>Propagation Centre</small>
+        </div>
+      </div>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main navigation">
+        <a class="nav-link" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#volunteer">Volunteer</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile sliding menu -->
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a class="m-link" href="#home">Home</a>
+    <a class="m-link" href="#about">About</a>
+    <a class="m-link" href="#gallery">Gallery</a>
+    <a class="m-link" href="#volunteer">Volunteer</a>
+    <a class="m-cta" href="#contact">Contact</a>
+  </aside>
+
+  <!-- HERO (slideshow backgrounds) -->
+  <section id="home" class="hero" role="region" aria-label="Hero">
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <!-- slides (JS will toggle .active) -->
+    <div class="slide" data-src="my pic 1.png"></div>
+    <div class="slide" data-src="my pic 2.png"></div>
+    <div class="slide" data-src="my pic 3.png"></div>
+    <div class="slide" data-src="my pic 4.png"></div>
+
+    <div class="hero-inner container">
+      <h1 class="hero-title">Building a Better Future Together</h1>
+      <p class="hero-sub">Join us in propagating Islam in the community, our state, and our nation.</p>
+      <div class="hero-buttons">
+        <!-- volunteer button: will redirect user to signup after storing form data -->
+        <button type="button" id="volunteerNext">Join Our Team</button>
+        <a class="btn-secondary-hero" href="#about">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about" aria-label="About">
+    <div class="section-header container">
+      <h2>About Al'Ameen Propagation center</h2>
+      <p>Al'Ameen Islamic Propagation Centre (AIPC) was founded to carry out Da'wah, support community education, and provide social services that uplift families and individuals. We focus on respectful outreach, Islamic education, youth empowerment and community service projects across regions.</p>
+    </div>
+
+    <div class="about-content container">
+      <div class="about-text">
+        <h3>Our Mission</h3>
+        <p>To provide accurate knowledge of Islam, support converts, run community programs (health, education), and build strong, compassionate communities through Da'wah and service.</p>
+
+        <ul class="about-list">
+          <li><i class="fas fa-book"></i> Islamic education & Qur'anic classes</li>
+          <li><i class="fas fa-hands-helping"></i> Community outreach & social support</li>
+          <li><i class="fas fa-users"></i> Youth engagement & mentorship</li>
+        </ul>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat">
+          <h4>5+</h4>
+          <p>Years of Service</p>
+        </div>
+        <div class="stat">
+          <h4>20+</h4>
+          <p>Community Projects</p>
+        </div>
+        <div class="stat">
+          <h4>100+</h4>
+          <p>Lives Impacted</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leadership cards (3) -->
+    <div class="section-header container" style="padding-top:6px">
+      <h2>Our Leadership</h2>
+    </div>
+    <div class="leaders container" style="margin-bottom:40px;">
+      <div class="leader-card">
+        <img src="https://source.unsplash.com/400x400/?portrait,man,1" alt="CEO">
+        <h3>Chief Executive Officer</h3>
+        <p>Visionary guiding our da’awah movement.</p>
+      </div>
+
+      <div class="leader-card">
+        <img src="https://source.unsplash.com/400x400/?portrait,man,2" alt="CFO">
+        <h3>Chief Finance Officer</h3>
+        <p>Ensuring financial stability and growth.</p>
+      </div>
+
+      <div class="leader-card">
+        <img src="https://source.unsplash.com/400x400/?portrait,man,3" alt="Director">
+        <h3>Director of Operations</h3>
+        <p>Managing daily efforts and success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery" aria-label="Gallery">
+    <div class="section-header container">
+      <h2>Gallery</h2>
+      <p>Scenes from our outreach, events and community work. Click to view.</p>
+    </div>
+
+    <div class="gallery-grid container" id="galleryGrid">
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 1"></div>
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 2"></div>
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 3"></div>
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 4"></div>
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 5"></div>
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 6"></div>
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 7"></div>
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 8"></div>
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 9"></div>
+      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 10"></div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER (form-first on landing) -->
+  <section id="volunteer" class="volunteer" aria-label="Volunteer">
+    <div class="section-header container">
+      <h2>Join Our Movement</h2>
+      <p>Real change happens when people take action.</p>
+    </div>
+
+    <div class="section-card-wrapper container">
+      <div class="section-card">
+        <h3>Why volunteer?</h3>
+        <p>Volunteering with AIPC connects you to people, builds skills, and creates meaningful community impact. Whether you help organise events, manage social media, teach, or support fundraising, your time matters.</p>
+        <ul class="benefits-list">
+          <li><i class="fas fa-check-circle"></i> Make a real difference</li>
+          <li><i class="fas fa-check-circle"></i> Meet like-minded people</li>
+          <li><i class="fas fa-check-circle"></i> Gain valuable experience</li>
+        </ul>
+      </div>
+
+      <div class="section-card">
+  <form 
+    id="volunteerForm" 
+    class="volunteer-form" 
+    aria-label="Volunteer sign up"
+    action="https://formsubmit.co/ahmedshehuyayu@gmail.com" 
+    method="POST"
+  >
+    <input type="text" name="v_name" placeholder="Full Name" required>
+    <input type="email" name="v_email" placeholder="Email Address" required>
+    <select name="v_interest" required>
+      <option value="">Select Area of Interest</option>
+      <option value="social-media">Social Media</option>
+      <option value="events">Events</option>
+      <option value="fundraising">Fundraising</option>
+      <option value="other">Other</option>
+    </select>
+    <textarea name="v_message" placeholder="Tell us why you want to volunteer"></textarea>
+    
+    <input type="hidden" name="_subject" value="New Volunteer Application from Landing Page">
+    
+    <button class="form-cta" type="submit">Join Us as a Team</button>
+  </form>
+</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact" aria-label="Contact">
+    <div class="section-header container">
+      <h2>Get in Touch</h2>
+      <p>We would love to hear from you — location and contacts are below.</p>
+    </div>
+
+    <div class="contact-card container">
+      <div class="contact-details">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Nigerian Army Post Service Housing Scheme, Karshi Road, Abuja</p>
+        <p><i class="fas fa-phone"></i> 08034019555, 08081641490, 07035983438</p>
+        <p><i class="fas fa-envelope"></i> info@voteforchange.com</p>
+      </div>
+
+    <form id="contactForm" class="contact-form" aria-label="Contact form">
+    <input type="text" id="c_name" name="c_name" placeholder="Your Name" required>
+    <input type="email" id="c_email" name="c_email" placeholder="Your Email" required>
+    <input type="text" id="c_subject" name="c_subject" placeholder="Subject" required>
+    <textarea id="c_message" name="c_message" placeholder="Your Message"></textarea>
+    <button class="form-cta" id="whatsappButton" type="button">Send Message</button>
+</form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner container">
+      <div class="col">
+        <h4>Join the Movement</h4>
+        <p>Building a better future through community engagement and Da'wah.</p>
+      </div>
+
+      <div class="col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Nigerian Army Post Service Housing Scheme, Karshi Road, Abuja</p>
+        <p><i class="fas fa-phone"></i> 08034019555</p>
+        <p><i class="fas fa-envelope"></i> info@voteforchange.com</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      &copy; 2025 AL'AMEEN ISLAM PROPAGATION CENTRE — All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
