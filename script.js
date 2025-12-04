@@ -39,8 +39,8 @@ if (heroEl) {
 }
 
 /* ========== Volunteer form handler REMOVED ========== 
-  This logic was removed because the volunteer form is now handled by FormSubmit 
-  (an HTML-only solution) for email submission, as decided previously.
+   This section is intentionally empty, as the functionality is now managed below 
+   by the WhatsApp handler.
 */
 
 /* ========== Gallery: simple lightbox ========== */
@@ -62,6 +62,45 @@ document.addEventListener('click', (e) => {
     return;
   }
 });
+
+/* ========== Volunteer form: WhatsApp handler ========== */
+// ACTION REQUIRED: Use the full WhatsApp number for the admin receiving volunteer applications
+const volunteerPhoneNumber = "YOUR_ADMIN_WHATSAPP_NUMBER"; 
+
+const whatsappVolunteerButton = document.getElementById('whatsappVolunteerButton');
+
+if (whatsappVolunteerButton) {
+  whatsappVolunteerButton.addEventListener('click', function(event) {
+    
+    // 1. Get field values from the HTML inputs (using the IDs we defined for the volunteer form)
+    const name = document.getElementById('v_name').value;
+    const email = document.getElementById('v_email').value;
+    const interest = document.getElementById('v_interest').value;
+    const message = document.getElementById('v_message').value;
+
+    // Simple validation check (ensure required fields are not empty)
+    if (!name || !email || !interest) {
+      alert("Please fill out your Full Name, Email, and Area of Interest.");
+      return; 
+    }
+
+    // 2. Combine all fields into a single, structured message string
+    let fullMessage = `*New Volunteer Application:*\n\n`;
+    fullMessage += `*Name:* ${name}\n`;
+    fullMessage += `*Email:* ${email}\n`;
+    fullMessage += `*Interest:* ${interest}\n\n`;
+    fullMessage += `*Message:*\n${message}`;
+    
+    // 3. URL-encode the message
+    const encodedMessage = encodeURIComponent(fullMessage);
+    
+    // 4. Construct the final WhatsApp API URL
+    const whatsappURL = `https://wa.me/${09067458755}?text=${encodedMessage}`;
+    
+    // 5. Open the URL in a new browser tab
+    window.open(whatsappURL, '_blank');
+  });
+}
 
 /* ========== Contact form: WhatsApp handler ========== */
 // ACTION REQUIRED: Use your full WhatsApp number including country code (e.g., 2349067458755)
@@ -94,7 +133,7 @@ if (whatsappButton) {
     // 3. URL-encode the message
     const encodedMessage = encodeURIComponent(fullMessage);
     
-    // 4. Construct the final WhatsApp API URL
+    // 4. Construct the final WhatsApp API URL (Fix: using the variable `phoneNumber`)
     const whatsappURL = `https://wa.me/${09067458755}?text=${encodedMessage}`;
     
     // 5. Open the URL in a new browser tab

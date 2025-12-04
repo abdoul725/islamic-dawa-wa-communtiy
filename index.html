@@ -48,10 +48,10 @@
     <div class="hero-overlay" aria-hidden="true"></div>
 
     <!-- slides (JS will toggle .active) -->
-    <div class="slide" data-src="my pic 1.png"></div>
-    <div class="slide" data-src="my pic 2.png"></div>
-    <div class="slide" data-src="my pic 3.png"></div>
-    <div class="slide" data-src="my pic 4.png"></div>
+    <div class="slide" data-src="hero 1.png"></div>
+    <div class="slide" data-src="hero 2.png"></div>
+    <div class="slide" data-src="hero 3.png"></div>
+    <div class="slide" data-src="hero 4.png"></div>
 
     <div class="hero-inner container">
       <h1 class="hero-title">Building a Better Future Together</h1>
@@ -105,19 +105,19 @@
     </div>
     <div class="leaders container" style="margin-bottom:40px;">
       <div class="leader-card">
-        <img src="https://source.unsplash.com/400x400/?portrait,man,1" alt="CEO">
+        <img src="hero 1.png" alt="CEO">
         <h3>Chief Executive Officer</h3>
         <p>Visionary guiding our da’awah movement.</p>
       </div>
 
       <div class="leader-card">
-        <img src="https://source.unsplash.com/400x400/?portrait,man,2" alt="CFO">
+        <img src="my pic 1.png" alt="CFO">
         <h3>Chief Finance Officer</h3>
         <p>Ensuring financial stability and growth.</p>
       </div>
 
       <div class="leader-card">
-        <img src="https://source.unsplash.com/400x400/?portrait,man,3" alt="Director">
+        <img src="my pic 2.png" alt="Director">
         <h3>Director of Operations</h3>
         <p>Managing daily efforts and success.</p>
       </div>
@@ -132,16 +132,16 @@
     </div>
 
     <div class="gallery-grid container" id="galleryGrid">
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 1"></div>
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 2"></div>
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 3"></div>
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 4"></div>
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 5"></div>
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 6"></div>
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 7"></div>
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 8"></div>
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 9"></div>
-      <div class="gallery-item"><img src="my pic 1.png" alt="gallery 10"></div>
+      <div class="gallery-item"><img src="my pic 6.png" alt="gallery 1"></div>
+      <div class="gallery-item"><img src="my pic 7.png" alt="gallery 2"></div>
+      <div class="gallery-item"><img src="my pic 8.png" alt="gallery 3"></div>
+      <div class="gallery-item"><img src="my pic 9.png" alt="gallery 4"></div>
+      <div class="gallery-item"><img src="my pic 10.png" alt="gallery 5"></div>
+      <div class="gallery-item"><img src="my pic 11.png" alt="gallery 6"></div>
+      <div class="gallery-item"><img src="my pic 12.png" alt="gallery 7"></div>
+      <div class="gallery-item"><img src="my pic 13.png" alt="gallery 8"></div>
+      <div class="gallery-item"><img src="hero 4.png" alt="gallery 9"></div>
+      <div class="gallery-item"><img src="hero 3.png" alt="gallery 10"></div>
     </div>
   </section>
 
@@ -162,29 +162,24 @@
           <li><i class="fas fa-check-circle"></i> Gain valuable experience</li>
         </ul>
       </div>
-
-      <div class="section-card">
+<div class="section-card">
   <form 
     id="volunteerForm" 
     class="volunteer-form" 
     aria-label="Volunteer sign up"
-    action="https://formsubmit.co/ahmedshehuyayu@gmail.com" 
-    method="POST"
   >
-    <input type="text" name="v_name" placeholder="Full Name" required>
-    <input type="email" name="v_email" placeholder="Email Address" required>
-    <select name="v_interest" required>
+    <input type="text" id="v_name" name="v_name" placeholder="Full Name" required>
+    <input type="email" id="v_email" name="v_email" placeholder="Email Address" required>
+    <select id="v_interest" name="v_interest" required>
       <option value="">Select Area of Interest</option>
       <option value="social-media">Social Media</option>
       <option value="events">Events</option>
       <option value="fundraising">Fundraising</option>
       <option value="other">Other</option>
     </select>
-    <textarea name="v_message" placeholder="Tell us why you want to volunteer"></textarea>
+    <textarea id="v_message" name="v_message" placeholder="Tell us why you want to volunteer"></textarea>
     
-    <input type="hidden" name="_subject" value="New Volunteer Application from Landing Page">
-    
-    <button class="form-cta" type="submit">Join Us as a Team</button>
+    <button class="form-cta" id="whatsappVolunteerButton" type="button">Join Us as a Team</button>
   </form>
 </div>
     </div>
